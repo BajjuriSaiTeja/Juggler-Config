@@ -26,6 +26,10 @@ zuul:
       url: http://172.23.239.112:8011
     booking:
       url: http://172.23.239.112:8888
+    rsvp-service:
+      url: http://172.23.239.112:9094
+    email-service:
+      url: http://172.23.239.112:8051
 management:
   endpoints:
     web:
