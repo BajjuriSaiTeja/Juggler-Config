@@ -1,39 +1,39 @@
 eureka:
   client:
     service-url:
-      defaultZone: http://172.23.239.116:9090/eureka
+      defaultZone: http://172.23.239.116:9083/eureka
     register-with-eureka: "true"
     fetch-registry: "true"
 server:
-  port: "8092"
+  port: "9084"
 zuul:
   routes:
     theatre:
-      url: http://172.23.239.112:8020
+      url: http://172.23.239.112:9071
     authentication:
-      url: http://172.23.239.112:8070
+      url: http://172.23.239.112:9074
     movie-schedule:
-      url: http://172.23.239.112:8030
+      url: http://172.23.239.112:9072
     userprofile:
-      url: http://172.23.239.112:8040
+      url: http://172.23.239.112:9073
     distributor:
-      url: http://172.23.239.112:8010
+      url: http://172.23.239.112:9070
     recommendation:
-      url: http://172.23.239.112:8050
+      url: http://172.23.239.112:9078
     search:
-      url: http://172.23.239.112:8060
+      url: http://172.23.239.112:9077
     showschedule:
-      url: http://172.23.239.112:8011
+      url: http://172.23.239.112:9082
     booking:
-      url: http://172.23.239.112:8888
+      url: http://172.23.239.112:9079
     rsvp-service:
-      url: http://172.23.239.112:9094
+      url: http://172.23.239.112:9075
     email-service:
-      url: http://172.23.239.112:8051
+      url: http://172.23.239.112:9076
     payment:
-      url: http://172.23.239.112:8031
+      url: http://172.23.239.112:9081
     promocodes:
-      url: http://172.23.239.112:9096
+      url: http://172.23.239.112:9080
 management:
   endpoints:
     web:
