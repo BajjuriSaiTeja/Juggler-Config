@@ -1,0 +1,36 @@
+eureka:
+  client:
+    service-url:
+      defaultZone: http://172.23.239.116:9090/eureka
+    register-with-eureka: "true"
+    fetch-registry: "true"
+server:
+  port: "8092"
+zuul:
+  routes:
+    theatre:
+      url: http://172.23.239.112:8020
+    authentication:
+      url: http://172.23.239.112:8070
+    movie-schedule:
+      url: http://172.23.239.112:8030
+    userprofile:
+      url: http://172.23.239.112:8040
+    distributor:
+      url: http://172.23.239.112:8010
+    recommendation:
+      url: http://172.23.239.112:8050
+    search:
+      url: http://172.23.239.112:8060
+    showschedule:
+      url: http://172.23.239.112:8011
+    booking:
+      url: http://172.23.239.112:8888
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+spring:
+  application:
+    name: api-gateway
