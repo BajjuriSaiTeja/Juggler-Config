@@ -11,7 +11,7 @@ spring:
     name: UserProfile
   cloud:
     config:
-      uri: http://172.23.239.116:8891
+      uri: http://172.23.239.116:9084
 eureka:
   client:
     register-with-eureka: "true"
