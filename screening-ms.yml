@@ -6,7 +6,7 @@ spring:
  
    mongodb:
      database: movie-schedule
-     host: 10.20.1.216
+     host: 172.23.239.108
      port: "27017"
      uri: mongodb://172.23.239.108/movie-schedule
      username: ""
