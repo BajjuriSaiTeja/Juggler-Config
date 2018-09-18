@@ -30,6 +30,10 @@ zuul:
       url: http://172.23.239.112:9094
     email-service:
       url: http://172.23.239.112:8051
+    payment:
+      url: http://172.23.239.112:8031
+    promo:
+      url: http://172.23.239.112:8051
 management:
   endpoints:
     web:
